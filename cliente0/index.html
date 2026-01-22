@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Nuestra Boda</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
     body {
@@ -13,33 +14,6 @@
         background: #faf5f0;
         overflow-x: hidden;
         text-align: center;
-    }
-
-    /* Fondo fijo de flores */
-    .flowers-bg {
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('FOTO_FONDO_FLORES.png');
-        background-size: cover;
-        background-position: center;
-        opacity: 1;
-        z-index: -3;
-    }
-
-    /* Brillos dorados */
-    .gold-sparkles {
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        background-image: url('BRILLOS_DORADOS.gif');
-        background-size: cover;
-        opacity: 0.75;
-        mix-blend-mode: screen;
-        z-index: -2;
     }
 
     /* Título principal */
@@ -113,25 +87,14 @@
         text-shadow: 0 0 3px rgba(255,255,255,0.7);
         font-style: italic;
     }
-
-    
-    }
 </style>
 </head>
 
 <body>
 
-<div class="flowers-bg"></div>
-<div class="gold-sparkles"></div>
-
 <h1 class="title">Nuestra Boda</h1>
 
 <p class="subtext">Queremos compartir contigo este momento tan especial lleno de amor.</p>
-
-<!-- Música de fondo -->
-<audio id="musica" autoplay loop>
-    <source src="MUSICA.mp3" type="audio/mpeg">
-</audio>
 
 <!-- Contenedor del video -->
 <div class="video-container">
@@ -141,15 +104,6 @@
 </div>
 
 <p class="footer-text">Gracias por formar parte de nuestra historia.</p>
-
-<script>
-    // Forzar reproducción en móviles
-    document.addEventListener('touchstart', function() {
-        document.getElementById('musica').play();
-    });
-
-    
-</script>
 
 </body>
 </html>
